@@ -2,7 +2,7 @@
 var tableData = data;
 
 // YOUR CODE HERE!
-//select table body
+//select table body to get a reference
 var tableBody = d3.select("tbody");
 
 //making table
@@ -38,7 +38,7 @@ function handleClick() {
   makingTable(filteredData);
 }
 
-// to do filder on click on button
+// to do filter on click on button
 d3.selectAll("#filter-btn").on("click", handleClick);
 
 // to show all data in table
